@@ -71,20 +71,6 @@ const competitors = [
     highlight: false,
     focus: "Multi-Cancer Early Detection",
   },
-  {
-    ticker: "MYGN",
-    name: "Myriad Genetics",
-    marketCap: "$429M",
-    revenue: "$825M",
-    rev26e: "~$890M",
-    revenueGrowth: "8%",
-    evRev: "0.6x",
-    evRev26e: "~0.5x",
-    grossMargin: "69%",
-    profitable: false,
-    highlight: false,
-    focus: "Hereditary Cancer + Prenatal",
-  },
 ];
 
 export function CompetitorTable() {

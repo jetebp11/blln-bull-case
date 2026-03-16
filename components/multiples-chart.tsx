@@ -18,7 +18,6 @@ const data = [
   { name: "GH", ttm: 11.9, fwd: 9.3, growth: 31, profitable: false },
   { name: "CAI", ttm: 6.5, fwd: 5.2, growth: 97, profitable: false },
   { name: "GRAL", ttm: 6.0, fwd: 4.9, growth: 17, profitable: false },
-  { name: "MYGN", ttm: 0.6, fwd: 0.5, growth: 8, profitable: false },
 ];
 
 const CustomTooltip = ({ active, payload, label }: any) => {
