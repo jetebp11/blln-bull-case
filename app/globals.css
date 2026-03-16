@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+html {
+  color-scheme: light only;
+}
+
+:root {
+  --background: #fff8f0;
+  --background-paper: #ffffff;
+  --foreground: #1a1a1a;
+  --navy: #0d3b66;
+  --navy-light: #1a5276;
+  --accent: #c0392b;
+  --accent-muted: #9b2335;
+  --green: #1a7a4c;
+  --green-bg: #eaf5f0;
+  --red: #c0392b;
+  --red-bg: #fdf0ee;
+  --muted: #6b7280;
+  --muted-light: #9ca3af;
+  --border: #e5d5c3;
+  --border-light: #f0e6d8;
+  --rule: #333333;
+  --salmon: #fff1e5;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-paper: var(--background-paper);
+  --color-foreground: var(--foreground);
+  --color-navy: var(--navy);
+  --color-navy-light: var(--navy-light);
+  --color-accent: var(--accent);
+  --color-accent-muted: var(--accent-muted);
+  --color-green: var(--green);
+  --color-green-bg: var(--green-bg);
+  --color-red: var(--red);
+  --color-red-bg: var(--red-bg);
+  --color-muted: var(--muted);
+  --color-muted-light: var(--muted-light);
+  --color-border: var(--border);
+  --color-border-light: var(--border-light);
+  --color-rule: var(--rule);
+  --color-salmon: var(--salmon);
+  --font-serif: var(--font-lora);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d1c4b0 var(--background);
+}
+
+/* FT-style thick top rule on sections */
+.ft-rule-top {
+  border-top: 3px solid var(--rule);
+  padding-top: 0.75rem;
+}
+
+.ft-rule-thin {
+  border-top: 1px solid var(--border);
+}
+
+/* JPM-style navy header bar */
+.jpm-header {
+  background: var(--navy);
+  color: white;
+}
